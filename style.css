@@ -1,0 +1,68 @@
+body{
+
+ background: url("/img/Random.jpg");
+ background-size: 1366px 768px;
+
+ background-repeat: no-repeat; /*image repeatation off kore*/
+ /* background-attachment fixed dile shb khane pics jai */
+
+ background-attachment: fixed;  
+
+/*  background-attachment: scroll;  image scroll kora jai */
+
+}
+
+p{
+   
+    color:red;
+    background-color: Green;
+
+}
+
+#id1{
+
+ color: black;
+ border: 2px solid gray;
+
+}
+
+#newtag{
+
+    color: blue;
+
+}
+
+hello{
+
+ color: blue;
+ background-color: grey;
+ font-size: 25px;
+ background-attachment: scroll;
+
+}
+
+.header a{
+    display: inline-block; /*in line e css apply hoi nai tai margin-top kaaj kore na but ei line likle solve hoi*/
+    color: black;
+    border: 2px solid gray;
+    text-decoration: None;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    /* margin: 50px bolle char dikei 50px margin hbe */
+    padding: 25px; /* padding korle border ta lekha theke dure shorano jai */
+    /*padding left padding right padding top padding bottom o apply kora jai */
+
+}
+
+
+
+normal{
+
+    color: green;
+    display: inline block; 
+    border: 2px solid gray;
+
+
+}
+
