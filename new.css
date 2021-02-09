@@ -11,7 +11,7 @@
     padding:20px;
 
 }
-
+/* grid marking korsi */
 .col{
 
     border:2px solid red;
@@ -42,6 +42,9 @@
 .col-5{
     border:2px solid greenyellow;
 }
+
+/* glass concept */
+
 .glass{
     background: rgba( 255, 255, 255, 0.30 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -49,3 +52,86 @@
     -webkit-backdrop-filter: blur( 20.0px );
     border-radius: 10px;
 }
+
+/* psuedo class */
+
+:root{
+    color:red;
+}
+
+p:hover{
+    color:aqua; /*hover effect dei */
+    background-color: black;
+    margin-bottom: 5px salmon;
+}
+.psuedo-1:hover{
+    color:aquamarine;
+}
+
+/* eivabe akta list er othaba akta div er under e thaka multiple */
+/* class e styling kora jai */
+
+li:first-child{
+    color:aqua
+}
+
+li:last-child{
+    color:blue;
+}
+
+li:nth-child(2){
+    color:aquamarine;
+}
+
+li:nth-child(4){
+    color:blue;
+}
+
+li:only-child{
+    color:aqua;
+}
+
+/*
+li:first-child{
+}
+
+li:last-child{
+}
+*/
+li::first-letter{
+    color:orange;
+
+}
+
+li::marker{
+  color:green;
+  
+}
+
+li::first-line{
+    color:blueviolet;
+}
+/*id er upr Apply korsi */
+#link:link{ /* eita unvistied link er color korsi */
+    color:red;
+}
+
+#link:visited{ /* eita vistied link er color korsi */
+    color:orange;
+}
+
+/*class er upor Apply korsi*/
+.google:link{
+    color:brown;
+}
+
+.google:visited{
+    color:green;
+}
+
+/* basically multiple tag Add kore kore psuedo selector use korbo */
+
+/* .A1 + .A2{ eikhane kaaj kore nai but paragraph h1 eishb tag e kaj kore 
+    color:blue
+}
+*/
