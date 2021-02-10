@@ -1,0 +1,92 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+.parent{
+    height:100vh;
+    border:20px solid rgb(0, 0,0);
+    
+    display:flex; /*eita dile shb colum wise ashe */
+    /* flex-direction:column; colum wise thake content */
+    flex-direction: row; /*specify kore dewa jai kondike flex korbe */
+   /* justify-content: center; /*justify content diye diye element er position thik kora jai */
+    
+   /*justify content diye x-axis borabor sorano jai element */
+    justify-content: flex-start; /*shb kisu x-axis borabor shuru t chole ashe */
+    justify-content:flex-end; /*shb kisu sesh e chole jabe x axis borabor */
+    justify-content:space-between; /*duita element er majkhane gap hoi but prothom and last element
+    er pore gap thake na */
+    justify-content:space-around; /*protita element er charpashe space create hoi but shb dike equal space nei na */
+    justify-content: space-evenly; /* charpashe even vabe  equally space nei */
+    justify-content: center;
+    
+    /*Align items diye y-axis borabor sorano jai element */
+    align-items: center; /* x=0 y=0 position e niye Ashe */
+    align-items: flex-start;/*y axis borabor shb kisu upore chole ashe */
+    align-items: flex-end; /* y axis borabor shb kisu niche neme ashe */
+    align-items: stretch; /*  strech kore pura element k lomba kore jdi height property remove kore dei tahle kaaj korbe */
+    flex-wrap: wrap; /*eita diye screen size choto hoile content jeno niche chole ashe seta control kore */
+    flex-flow:row wrap; /*eita dile flex direction row wise hoi and screen size change hoile
+    content wrap hoi */
+    flex-flow:row nowrap; /*eita dile flex direction row wise hoi and screen size change hoile
+    content wrap hoi na*/
+    
+
+    
+}
+/*
+div:nth-child(1){
+    color:blue;
+    width:40px;
+    height:40px;
+    background-color:rebeccapurple;
+}
+
+div:nth-child(2){
+    color:blue;
+    width:40px;
+    height:40px;
+    background-color:blueviolet;
+}
+
+div:nth-child(3){
+    color:blue;
+    width:40px;
+    height:40px;
+    background-color:green;
+}
+*/
+/*flex shrink flex basis  order*/
+.child1{
+    width:200px;
+    height: 200px;
+    background-color:rebeccapurple;
+   /* order:2; by default shb kichu r order 0 theke. jar order joto higher tar position toto last e jai */
+    /* flex-grow: 2; eita dile content er size bare */
+    /* flex-shrink:1 ; eita flex grow er opposite */
+    /*width er bodole flex-basis use kora jai jeita individual content er width dei*/
+    align-self: flex-end; /* element edik sedik move koraite align-self use kora jai */
+   
+}
+.child2{
+    width:200px;
+    height:200px;
+    background-color:blueviolet;
+    flex-grow: 2;
+    align-self:center;
+}
+.child3{
+    width:200px;
+    height:200px;
+    background-color:green;
+    flex-grow: 2;
+}
+.child4{
+    width:200px;
+    height: 200px;
+    background-color:palegreen;
+    flex-grow: 2;
+}
