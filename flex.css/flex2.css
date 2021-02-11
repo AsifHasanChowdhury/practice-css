@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.parent{
+    
+
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    
+}
+/* .parent>*{
+    padding: 10px;
+    margin:4px; 
+    flex:1 100%;
+}  eitar bodole nicher way t shb class call kore korsi*/
+
+
+.header, .footer, .main1, .side1, .side2 { /*multiple class coma diye add kora jai*/
+    padding: 10px;
+    margin:10px;
+    flex:1 100%;
+    background-color:blueviolet;
+    border-radius: 6px;
+}
+.header{
+    background-color: rebeccapurple;
+    height: 120px;
+}
+.side1{
+    background-color:orange;
+}
+.side2{
+    
+    
+    background-color:green;
+   
+}
+
+.main1{
+    
+    text-align: left;
+    background-color:yellow;
+    height: 400px;
+    font-size: 24px;
+}
+.footer{
+    background-color: aqua;
+    height: 80px;
+
+}
+
+@media all and (min-width:800px){
+    .main1{
+        flex:4;
+    }
+    .side1{
+        order: 0;
+    }
+    .side2{
+        order:2;
+    }
+    .main1{
+        order: 2;
+    }
+    .footer{
+        order:4;
+    }
+}
+@media all and (min-width:600px){
+    .side{
+        flex:1;
+    }
+
+}

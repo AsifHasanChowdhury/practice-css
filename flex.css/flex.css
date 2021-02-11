@@ -83,6 +83,7 @@ div:nth-child(3){
     height:200px;
     background-color:green;
     flex-grow: 2;
+   
 }
 .child4{
     width:200px;
