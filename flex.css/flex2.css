@@ -6,12 +6,19 @@
 }
 .parent{
     
-
     display: flex;
     flex-flow: row wrap;
     text-align: center;
     
 }
+.parent2{
+    
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    
+}
+
 /* .parent>*{
     padding: 10px;
     margin:4px; 
@@ -19,11 +26,10 @@
 }  eitar bodole nicher way t shb class call kore korsi*/
 
 
-.header, .footer, .main1, .side1, .side2 { /*multiple class coma diye add kora jai*/
+.header, .footer, .main1, .side1, .side2 ,.side22 { /*multiple class coma diye add kora jai*/
     padding: 10px;
     margin:10px;
     flex:1 100%;
-    background-color:blueviolet;
     border-radius: 6px;
 }
 .header{
@@ -32,6 +38,7 @@
 }
 .side1{
     background-color:orange;
+    
 }
 .side2{
     
@@ -53,12 +60,17 @@
 
 }
 
+
 @media all and (min-width:800px){
     .main1{
         flex:4;
     }
+
     .side1{
         order: 0;
+        width:200px;
+        height:500px;
+        
     }
     .side2{
         order:2;
@@ -73,6 +85,29 @@
 @media all and (min-width:600px){
     .side{
         flex:1;
+    }
+
+}
+@media all and (max-width:800px){
+    .side1{
+        flex-basis:150px;
+    }
+
+}
+@media all and (max-width:600px){
+    
+    .parent2{
+    
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        
+        
+    }
+    .si{
+        
+        background-color: aqua;   
+        width:200px;
     }
 
 }
